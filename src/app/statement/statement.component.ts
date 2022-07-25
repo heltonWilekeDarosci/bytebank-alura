@@ -1,3 +1,4 @@
+import { TransferingService } from './../services/transfering.service';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
@@ -7,11 +8,12 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class StatementComponent implements OnInit {
 
-  @Input() transfers: any[];
+  transfers: any[];
 
-  constructor() { }
+  constructor(private service: TransferingService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.transfers = this.service.transfers;
   }
 
 }
