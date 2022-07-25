@@ -2,7 +2,7 @@
   background-color: white;
   padding: 16px;
   border-radius: 4px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
   &__title {
     text-transform: capitalize;
     color: var(--primary);
@@ -26,7 +26,7 @@
   &__input {
     padding: 8px;
     border-radius: 4px;
-    color: inherit;
+    color: #000;
     border: 2px solid;
     outline: none;
   }
